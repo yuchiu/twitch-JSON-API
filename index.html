@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Twitch API</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+<!-- nav -->
+<nav class="navbar navbar-light navbar-toggleable-sm bg-faded justify-content-between">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="index.html" class="navbar-brand">Twitch API</a>
+    <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
+        <div>
+            <!--placeholder to evenly space flexbox items and center links-->
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">All <span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item allOnline">
+                <a class="nav-link" href="#">Online</a>
+            </li>
+            <li class="nav-item allOffline">
+                <a class="nav-link" href="#">Offline</a>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0" id="searchBar">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search for Other Channels" id="searchBarContent">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- list -->
+
+<div class="container pt-3">
+    <div class="">
+        <ul id="channels" class="list-group m-3">
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">channel</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">random</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>            
+            <li class="list-group-item justify-content-between" id="searchResult">
+                <img src="" class="profile-pic" height="60" width="60" style="border-radius:5px;">
+                <h4 class="list-group-item-heading title">random</h4>
+                <div class="status badge badge-pill"></div>
+                <a class="link btn" href="http://www.twitch.com" role="button"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    </body>
+
+</html>
