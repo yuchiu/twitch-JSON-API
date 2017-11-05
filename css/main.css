@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|VT323|Orbitron:400,900);
+
+
+body{
+    font-family: 'Orbitron';
+    background:darkgrey;
+    min-width: 100vh
+}
+#panel-container{
+    border: 1px solid #000;
+    background:lightgrey;
+max-height: 80vh;
+max-width: 60vw;
+margin: 10px auto;
+display: flex;
+flex-wrap:  wrap; 
+}
+
+#banner-container{
+    width:100%;
+    border: 1px solid #000;
+    text-align: center;
+}
+#banner-title{
+    font-size: 35px;
+    text-decoration:  none;
+}
+
+
+#left-section{
+    width:40%;
+}
+#search-container{
+
+}
+
+
+#right-section{
+    width:60%;
+}
+#status-container{
+    
+}
+#channels-container{
+
+}
