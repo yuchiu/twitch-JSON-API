@@ -1,64 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|VT323|Orbitron:400,900);
-
-
-body{
+body {
     font-family: 'Orbitron';
-    background:darkgrey;
-    min-width: 100vh
-}
-#panel-container{
-    border: 1px solid #000;
-    background:lightgrey;
-max-height: 80vh;
-max-width: 60vw;
-margin: 10px auto;
-display: flex;
-flex-wrap:  wrap; 
+    background: darkgrey;
 }
 
-#banner-container{
-    width:100%;
+#panel-container {
+    border: 1px solid #000;
+    background: lightgrey;
+    height: 800px;
+    width: 800px;
+    margin: 100px auto 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#banner-container {
+    width: 100%;
+    padding: 30px;
     border: 1px solid #000;
     text-align: center;
-}
-#banner-title{
-    font-size: 35px;
-    text-decoration:  none;
+    height:70px;
 }
 
-
-#left-section{
-    width:40%;
-}
-#search-container{
-
+#banner-title {padding:10px;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-
-#right-section{
-    width:60%;
+#left-section {
+    width: 40%;
 }
-#status-container{
-    width:100%;
-    display:flex;
+
+#search-container {}
+#searchBarContent{
+    margin-top:10px;
+    margin-left: 10px;
+  padding: 5px;
+  height: 20px;
+  border: 3px solid #6600cc;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  background: transparent;
+}
+#searchBarContent:focus{
+  color: #6600cc;
+}
+#search-btn{ 
+    margin-left:-5px;
+  width: 40px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #6600cc;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#right-section {
+    width: 60%;
+}
+
+#status-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
     list-style: none;
     justify-content: space-between;
 }
-#channels-container{
 
-}
-/*channels */
-.channel-wrapper{
-    display: flex;
-}
-
-.online-status{
-    background-color: lightblue;
-}
-.offline-status{
-    background-color: lightsalmon;
-}
-.profile-pic{
-    height: 60px;
-    width: 60px;
-}
+#channels-container {}

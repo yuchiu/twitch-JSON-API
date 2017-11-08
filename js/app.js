@@ -21,7 +21,6 @@ const searchChannel = document.getElementById('searchBarContent');
 
 function getChannelInfo(name, index) {
     $.get("https://api.twitch.tv/kraken/streams/" + name + "?client_id=gvs1dph0z4nprptrzakral8izebdfr", function (data) {
-
         $(".inner").append("<p>Test</p>");
         channelName[index].innerHTML = name;
         checkOutChannel[index].href = "https://www.twitch.tv/" + name;
@@ -95,7 +94,6 @@ $('#allChannels').click(function () {
     $('.on').show();
 });
 $('#allOnline').click(function () {
-    console.log('dsadsasasd')
     $('.off').hide();
     $('.on').show();
 });

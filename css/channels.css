@@ -1,0 +1,16 @@
+
+/*channels */
+.channel-wrapper{
+    display: flex;
+}
+
+.online-status{
+    background-color: lightblue;
+}
+.offline-status{
+    background-color: lightsalmon;
+}
+.profile-pic{
+    height: 60px;
+    width: 60px;
+}
