@@ -40,22 +40,7 @@ body {
     width: 50%;
 }
 
-#search-container {
-    text-align: center;
-    justify-content: center;
-}
-
 #right-section {
     height: 730px;
     width: 50%;
 }
-
-#status-container {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 25px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-#channels-container {}

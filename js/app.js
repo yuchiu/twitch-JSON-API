@@ -76,11 +76,12 @@ function offlinePic(offlineChannel, num) {
 }
 searchBar.addEventListener('submit', (event) => {
     event.preventDefault();
-    let channelName = searchChannel.value;
-    $('#result-placeholder').hide();
-    $('#search-result').empty()
-    getResultChannel(channelName)
-    $('#search-result').show();
+    if(searchChannel.value){
+        let channelName = searchChannel.value;
+        $('#result-placeholder').hide();
+        $('#search-result').empty()
+        getResultChannel(channelName)
+        $('#search-result').show();}
 });
 
 $('#allChannels').click(function () {
