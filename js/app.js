@@ -1,9 +1,8 @@
-let channels = ['freecodecamp', 'TheRace', 'TwitchPresents', 'C9Sneaky', 'TheSpeedGamers', 'DkaneOfficial', 'Ninja', 'Cryaotic', 'SoLLUMINATI', 'KingGothalion'];
+let channels = ['freecodecamp', 'DrDisRespectLIVE', 'TwitchPresents', 'C9Sneaky', 'TheSpeedGamers', 'DkaneOfficial', 'Ninja', 'Cryaotic', 'SoLLUMINATI', 'KingGothalion'];
 
 const channelList = document.getElementById("channels");
 const listItems = channelList.getElementsByTagName("li");
 const statusItems = channelList.getElementsByClassName("status");
-const checkOutChannel = channelList.getElementsByClassName('link');
 const channelName = channelList.getElementsByClassName('title');
 const aButton = channelList.getElementsByTagName('a');
 const picture = channelList.getElementsByClassName('profile-pic');
@@ -23,18 +22,13 @@ function getChannelInfo(name, index) {
     $.get("https://api.twitch.tv/kraken/streams/" + name + "?client_id=gvs1dph0z4nprptrzakral8izebdfr", function (data) {
         $(".inner").append("<p>Test</p>");
         channelName[index].innerHTML = name;
-        checkOutChannel[index].href = "https://www.twitch.tv/" + name;
         if (data.stream != null) {
             picture[index].src = data.stream.channel.logo;
-            statusItems[index].innerHTML = 'online';
-            statusItems[index].classList.add('online-status');
-            listItems[index].classList.add('on');
-            checkOutChannel[index].innerHTML = "Watch Live Stream!";
+            statusItems[index].classList.add('status-on');
+            listItems[index].classList.add('on-group');
         } else {
-            statusItems[index].innerHTML = 'offline';
-            statusItems[index].classList.add('offline-status');
-            listItems[index].classList.add('off');
-            checkOutChannel[index].innerHTML = "Browse The Channel";
+            statusItems[index].classList.add('status-off');
+            listItems[index].classList.add('off-group');
             offlinePic(name, index);
         }
     });
@@ -47,9 +41,9 @@ function getResultChannel(name) {
     $.get("https://api.twitch.tv/kraken/streams/" + name + "?client_id=gvs1dph0z4nprptrzakral8izebdfr", function (data) {
         $('#search-result').append(`<h2 id="result-title">${name}</h2><a id="result-link" href="https://www.twitch.tv/${name}" role="button" target="_blank">check out the channel</a>`);
         if (data.stream != null) {
-            $('#search-result').append(`<div id="result-status" class="online-status">Online</div>`)
+            $('#search-result').append(`<div id="result-status" >On</div>`)
         } else {
-            $('#search-result').append(`<div id="result-status" class="offline-status">Offline</div>`)
+            $('#search-result').append(`<div id="result-status" >Off</div>`)
         }
     });
 }
@@ -90,15 +84,25 @@ searchBar.addEventListener('submit', (event) => {
 });
 
 $('#allChannels').click(function () {
-    $('.off').show();
-    $('.on').show();
+    $('.off-group').show();
+    $('.on-group').show();
+    $('#allChannels').addClass('status-active');
+    $('#allOnline').removeClass('status-active');
+    $('#allOffline').removeClass('status-active');
 });
 $('#allOnline').click(function () {
-    $('.off').hide();
-    $('.on').show();
+    $('.off-group').hide();
+    $('.on-group').show();
+    $('#allOnline').addClass('status-active');
+    $('#allChannels').removeClass('status-active');
+    $('#allOffline').removeClass('status-active');
+
 });
 
 $('#allOffline').click(function () {
-    $('.on').hide();
-    $('.off').show();
+    $('.on-group').hide();
+    $('.off-group').show();
+    $('#allOffline').addClass('status-active');
+    $('#allChannels').removeClass('status-active');
+    $('#allOnline').removeClass('status-active');
 });

@@ -1,0 +1,23 @@
+{
+  "name": "twitch-json-api",
+  "version": "1.0.0",
+  "description": "[DEMO](https://yuchiu.github.io/twitch-JSON-API/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuchiu/twitch-JSON-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuchiu/twitch-JSON-API/issues"
+  },
+  "homepage": "https://github.com/yuchiu/twitch-JSON-API#readme",
+  "dependencies": {
+    "serve": "^6.4.1"
+  }
+}

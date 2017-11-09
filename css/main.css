@@ -1,75 +1,61 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|VT323|Orbitron:400,900);
 body {
     font-family: 'Orbitron';
-    background: darkgrey;
+    background-color: #B3ABC3;
 }
 
 #panel-container {
-    border: 1px solid #000;
-    background: lightgrey;
-    height: 800px;
+    background: #b3b4bf;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #b3b4bf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #b3b4bf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 11px 25px 5px rgba(99, 99, 99, 1);
+    -moz-box-shadow: 5px 11px 25px 5px rgba(99, 99, 99, 1);
+    box-shadow: 5px 11px 25px 5px rgba(99, 99, 99, 1);
+    height: 820px;
     width: 800px;
-    margin: 100px auto 25px auto;
+    margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 #banner-container {
     width: 100%;
-    padding: 30px;
-    border: 1px solid #000;
+    padding: 15px;
     text-align: center;
-    height:70px;
+    height: 70px;
 }
 
-#banner-title {padding:10px;
+#banner-title {
+    padding: 10px;
     font-size: 3em;
     font-weight: bold;
     text-decoration: none;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black, 5px 4px #333333;
 }
 
 #left-section {
-    width: 40%;
+    height: 730px;
+    width: 50%;
 }
 
-#search-container {}
-#searchBarContent{
-    margin-top:10px;
-    margin-left: 10px;
-  padding: 5px;
-  height: 20px;
-  border: 3px solid #6600cc;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-  background: transparent;
+#search-container {
+    text-align: center;
+    justify-content: center;
 }
-#searchBarContent:focus{
-  color: #6600cc;
-}
-#search-btn{ 
-    margin-left:-5px;
-  width: 40px;
-  height: 36px;
-  border: none;
-  background: transparent;
-  text-align: center;
-  color: #6600cc;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
+
 #right-section {
-    width: 60%;
+    height: 730px;
+    width: 50%;
 }
 
 #status-container {
     width: 70%;
     margin: auto;
+    margin-bottom: 25px;
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
-
 #channels-container {}
