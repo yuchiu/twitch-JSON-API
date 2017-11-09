@@ -84,15 +84,15 @@ searchBar.addEventListener('submit', (event) => {
 });
 
 $('#allChannels').click(function () {
-    $('.off-group').show();
-    $('.on-group').show();
+    $('.off-group').show("slow");
+    $('.on-group').show("slow");
     $('#allChannels').addClass('status-active');
     $('#allOnline').removeClass('status-active');
     $('#allOffline').removeClass('status-active');
 });
 $('#allOnline').click(function () {
-    $('.off-group').hide();
-    $('.on-group').show();
+    $('.off-group').hide("slow");
+    $('.on-group').show("slow");
     $('#allOnline').addClass('status-active');
     $('#allChannels').removeClass('status-active');
     $('#allOffline').removeClass('status-active');
@@ -100,8 +100,8 @@ $('#allOnline').click(function () {
 });
 
 $('#allOffline').click(function () {
-    $('.on-group').hide();
-    $('.off-group').show();
+    $('.on-group').hide("slow");
+    $('.off-group').show("slow");
     $('#allOffline').addClass('status-active');
     $('#allChannels').removeClass('status-active');
     $('#allOnline').removeClass('status-active');

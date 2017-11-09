@@ -1,4 +1,5 @@
 /* search */
+
 #searchBarContent {
     margin-top: 10px;
     margin-left: 10px;
@@ -27,4 +28,8 @@
     border-bottom-right-radius: 5px;
     cursor: pointer;
     font-size: 20px;
+}
+
+#search-btn:focus {
+    outline: 0;
 }
