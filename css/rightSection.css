@@ -3,8 +3,7 @@
 #status-container {
     width: 65%;
     margin: auto;
-    margin-top: 8px;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
     display: flex;
     list-style: none;
     justify-content: space-between;
